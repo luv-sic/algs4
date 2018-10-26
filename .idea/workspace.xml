@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="add gitignore data">
-      <change afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="percolation isOpen open">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuickUnionUF.java" beforeDir="false" afterPath="$PROJECT_DIR$/QuickUnionUF.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/lift/" />
@@ -46,7 +47,7 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="5" />
+          <entry key="java" value="11" />
           <entry key="md" value="1" />
           <entry key="name" value="1" />
           <entry key="txt" value="3" />
@@ -55,59 +56,41 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="11" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
           <entry key="gitignore" value="14" />
-          <entry key="java" value="1420" />
-          <entry key="txt" value="18" />
+          <entry key="java" value="1779" />
+          <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1420" />
-          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="JAVA" value="1779" />
+          <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Percolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/QuickUnionUF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="382">
+              <caret line="126" column="21" lean-forward="true" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -115,8 +98,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuickFindUF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="382">
+              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuickUnionUF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -180,6 +172,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>union</find>
+      <find>0</find>
+      <find>2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,16 +182,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/QuickUnionUF.java" />
         <option value="$PROJECT_DIR$/QuickUnionImproveUF.java" />
         <option value="$PROJECT_DIR$/WeightedQuickUnionUF.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/QuickFindUF.java" />
+        <option value="$PROJECT_DIR$/QuickUnionUF.java" />
         <option value="$PROJECT_DIR$/Percolation.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="831" />
@@ -257,7 +251,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Percolation">
+    <configuration name="Percolation" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Percolation" />
+      <module name="Algorithms, Part I" />
+      <method v="2" />
+    </configuration>
     <configuration name="QuickFindUnion" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="QuickFindUF" />
       <module name="Algorithms, Part I" />
@@ -267,6 +266,10 @@
     <configuration default="true" type="Application" factoryName="Application">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.QuickFindUnion" />
+      <item itemvalue="Application.Percolation" />
+    </list>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -278,24 +281,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19450317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19450317" />
       <window_info id="Structure" order="1" show_stripe_button="false" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" show_stripe_button="false" side_tool="true" />
       <window_info id="Repositories" order="4" visible="true" weight="0.32980973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32992035" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.32904148" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3296433" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989429" weight="0.3285528" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4989429" visible="true" weight="0.32750583" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.3285528" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32825485" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
@@ -337,7 +340,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="add gitignore data" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore data" />
+    <MESSAGE value="percolation isOpen open" />
+    <option name="LAST_COMMIT_MESSAGE" value="percolation isOpen open" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/logo.png" />
@@ -370,7 +374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="952">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
         </state>
       </provider>
@@ -398,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuickUnionUF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/One_one.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -412,17 +409,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/.lift/algs4.jar!/edu/princeton/cs/algs4/StdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/QuickFindUF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="382">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="991">
+          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuickUnionUF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Percolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        <state relative-caret-position="382">
+          <caret line="126" column="21" lean-forward="true" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
         </state>
       </provider>
     </entry>
