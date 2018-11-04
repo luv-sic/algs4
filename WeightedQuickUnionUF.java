@@ -6,13 +6,15 @@
  **************************************************************************** */
 
 public class WeightedQuickUnionUF {
-    int[] id;
-    int[] h;
+    private int[] id;
+    private int[] h;
 
     WeightedQuickUnionUF(int n) {
         id = new int[n];
+        h = new int[n];
         for (int i = 0; i < n; i++) {
             id[i] = i;
+            h[i] = 1;
         }
     }
 
