@@ -14,8 +14,8 @@ public class Deque<Item> implements Iterable<Item> {
         }
     }
 
-    private Node head;
-    private Node tail;
+    private Node head = null;
+    private Node tail = null;
     private int n = 0;
 
     // construct an empty deque
@@ -34,6 +34,7 @@ public class Deque<Item> implements Iterable<Item> {
 
     // add the item to the front
     public void addFirst(Item item) {
+        checkArgs(item);
         n++;
         Node current = new Node(item);
         Node oldHead = head;
@@ -49,6 +50,7 @@ public class Deque<Item> implements Iterable<Item> {
 
     // add the item to the end
     public void addLast(Item item) {
+        checkArgs(item);
         n++;
         Node current = new Node(item);
         Node oldTail = tail;
@@ -119,6 +121,13 @@ public class Deque<Item> implements Iterable<Item> {
 
         @Override
         public void remove() {
+            throw new UnsupportedOperationException();
+        }
+    }
+
+    private void checkArgs(Item item) {
+        if (item == null) {
+            throw new IllegalArgumentException();
         }
     }
 
