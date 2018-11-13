@@ -28,7 +28,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if (item == null) {
             throw new IllegalArgumentException();
         }
-        if (n == queue.length) {
+        if (n == queue.length - 1) {
             resize(n * 2);
         }
         queue[++n] = item;
@@ -78,6 +78,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
         @Override
         public Item next() {
+            checkEmpty();
             return sample();
         }
 
@@ -97,6 +98,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // unit testing (optional)
     public static void main(String[] args) {
-
+        // empty
     }
 }

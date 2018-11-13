@@ -108,10 +108,7 @@ public class Deque<Item> implements Iterable<Item> {
 
         @Override
         public boolean hasNext() {
-            if (current.next != null) {
-                return true;
-            }
-            return false;
+            return current != null;
         }
 
         @Override
@@ -119,7 +116,9 @@ public class Deque<Item> implements Iterable<Item> {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            return current.next.item;
+            Item item = current.item;
+            current = current.next;
+            return item;
         }
 
         @Override
@@ -157,5 +156,8 @@ public class Deque<Item> implements Iterable<Item> {
         deque.removeFirst();
         deque.removeLast();
         StdOut.println(deque.toString());
+        for (String item : deque) {
+            StdOut.println(item);
+        }
     }
 }
