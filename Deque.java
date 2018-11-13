@@ -4,8 +4,12 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class Deque<Item> implements Iterable<Item> {
+    private Node head = null;
+    private Node tail = null;
+    private int n = 0;
+
     private class Node {
-        private Item item;
+        private final Item item;
         private Node next;
         private Node prev;
 
@@ -13,10 +17,6 @@ public class Deque<Item> implements Iterable<Item> {
             item = i;
         }
     }
-
-    private Node head = null;
-    private Node tail = null;
-    private int n = 0;
 
     // construct an empty deque
     public Deque() {
@@ -104,7 +104,7 @@ public class Deque<Item> implements Iterable<Item> {
     }
 
     private class DequeIterator implements Iterator<Item> {
-        private Node current;
+        private Node current = head;
 
         @Override
         public boolean hasNext() {
@@ -116,6 +116,9 @@ public class Deque<Item> implements Iterable<Item> {
 
         @Override
         public Item next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             return current.next.item;
         }
 
