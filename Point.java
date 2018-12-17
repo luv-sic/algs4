@@ -16,9 +16,9 @@ import java.util.Comparator;
 
 public class Point implements Comparable<Point> {
 
+    public final Comparator<Point> SLOPE_ORDER = new SlopeOrder();
     private final int x;     // x-coordinate of this point
     private final int y;     // y-coordinate of this point
-    public final Comparator<Point> SLOPE_ORDER = new SlopeOrder();
 
     /**
      * Initializes a new point.
