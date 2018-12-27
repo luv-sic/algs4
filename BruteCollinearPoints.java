@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
@@ -67,9 +68,20 @@ public class BruteCollinearPoints {
         for (int i = 9; i >= 0; i--) {
             ps[i] = new Point(i, i);
         }
+        StdDraw.enableDoubleBuffering();
+        StdDraw.setXscale(0, 10);
+        StdDraw.setYscale(0, 10);
+        for (Point p : ps) {
+            p.draw();
+        }
+        StdDraw.show();
+
         BruteCollinearPoints cp = new BruteCollinearPoints(ps);
-        StdOut.println("-------- main -----------");
+        for (LineSegment ls : cp.segments()) {
+            ls.draw();
+        }
+        StdDraw.show();
+
         StdOut.println(cp.numberOfSegs);
-        StdOut.println(cp.segments());
     }
 }
