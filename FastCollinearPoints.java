@@ -1,25 +1,29 @@
+import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Arrays;
 
 //
 public class FastCollinearPoints {
-    private final LineSegment[] segs = new LineSegment[1];
+    private LineSegment[] segs;
     private int numberOfSegs = 0;
 
     // finds all line segments containing 4 or more points
     public FastCollinearPoints(Point[] points) {
         checkArgs(points);
+        int len = points.length;
+        segs = new LineSegment[len];
         for (Point p : points) {
             Arrays.sort(points, p.SLOPE_ORDER);
-            for (int i = 0; i < points.length; ) {
+            for (int i = 0; i < len; ) {
                 if (points[i] == null) break;
                 int j = i + 1;
                 if (points[j] == null) break;
-                while (points[j] != null && p.slopeTo(points[i]) == p.slopeTo(points[j])) {
-                    StdOut.println(i);
-                    StdOut.println(j);
+                while (j < len && p.slopeTo(points[i]) == p.slopeTo(points[j])) {
                     j++;
+                }
+                if (j == len) {
+                    j--;
                 }
                 if (j - i >= 4) {
                     segs[numberOfSegs++] = new LineSegment(points[i], points[j]);
@@ -62,20 +66,20 @@ public class FastCollinearPoints {
         for (int i = 9; i >= 0; i--) {
             ps[i] = new Point(i, i);
         }
-        // StdDraw.enableDoubleBuffering();
-        // StdDraw.setXscale(0, 10);
-        // StdDraw.setYscale(0, 10);
-        // for (Point p : ps) {
-        //     p.draw();
-        // }
-        // StdDraw.show();
+        StdDraw.enableDoubleBuffering();
+        StdDraw.setXscale(0, 10);
+        StdDraw.setYscale(0, 10);
+        for (Point p : ps) {
+            p.draw();
+        }
+        StdDraw.show();
 
         FastCollinearPoints cp = new FastCollinearPoints(ps);
         for (LineSegment ls : cp.segments()) {
-            // ls.draw();
+            ls.draw();
             StdOut.println(ls.toString());
         }
-        // StdDraw.show();
+        StdDraw.show();
 
         StdOut.println(cp.numberOfSegments());
     }
